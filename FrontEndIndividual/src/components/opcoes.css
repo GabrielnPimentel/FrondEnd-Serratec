@@ -1,0 +1,35 @@
+.opcoes{
+    margin-bottom: 16rem;
+    scroll-margin-top: 15rem;
+}
+.opcoes h3{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.opcoes_container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    width: 100%;
+    padding: 50px;
+    border: 5px solid #fff773;
+    border-radius: 20px;
+}
+
+.opcoes_item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 4px solid #fff773;
+    border-radius: 20px;
+    padding: 15px;
+    background-color: #5e98e4;
+}
+
+.opcoes_item img{
+    width: 100%;
+    max-width: 47rem;
+    border-radius: 20px;
+}

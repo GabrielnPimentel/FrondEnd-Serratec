@@ -1,0 +1,19 @@
+.header{
+    display: flex;
+    justify-content: center;
+    margin-top: -7rem;
+    margin-bottom: 7rem;
+
+
+}
+
+.header_content{
+    background-color: aliceblue;
+    border: 5px solid gray;
+    border-radius: 10px;
+    width: 50%;
+}
+
+.header_content h3{
+    padding: 1rem;
+}

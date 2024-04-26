@@ -1,0 +1,13 @@
+.footer{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff773;
+}
+
+.footer_container{
+    display: flex;
+    justify-content: end;
+    margin-right: 1rem;
+}

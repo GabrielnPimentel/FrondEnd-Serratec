@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../components/extends.css" />
+    <link rel="stylesheet" href="form.css">
+    <link rel="icon" type="image/png" href="../assets/radioactiveIcon.png" />
+    <title>Candidatura</title>
+</head>
+<body>
+    <!-- <nav class="navbar">
+        <div class="navbar_content">
+            <div class="navbar_image">
+                <a href="../../index.html"><img src="../assets/vaultBoyIcon.png" alt="" /></a>    
+            </div>
+          <div class="container_links">
+            <ul class="navbar_links">
+              <li><a href="https://www.google.com/maps">Refúgios</a></li>
+              <li><a href="./src/pages/form.html">Candidatar-se</a></li>
+              <li><a href="../../index.html">Sobre</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav> -->
+    <main>
+        <div class="screen">
+          <h3>ESSE TERMINAL ACEITA APENAS ENTRADA POR TECLADO <br>PRESSIONE TAB PARA INICIAR</h3>
+            <form class="form" onsubmit="handleSubmit(event)">
+                <fieldset>
+                  <section id="name_section">
+                    <label>Nome do aplicante:</label>
+                    <input type="text" name="nome" id="nome" required />
+                  </section>
+
+                  <section id="genero_section">
+                    <label for="genero">Gênero: </label>
+                    <div>
+                      <input type="radio" name="genero" id="feminino" value="f" required />
+                      Feminino
+                      <input type="radio" name="genero" id="masculino" value="m" required />
+                      Masculino
+                      <input type="radio" name="genero" id="nao-binario" value="n" required />
+                      Não obrigado
+                    </div>
+                  </section>
+                  <section id="name_section">
+                    <label>Idade:</label>
+                    <input type="text" name="idade" id="idade" required />
+                  </section>  
+                  <section id="pets_section">
+                    <label for="">Possui Pets?</label>
+                    <input type="radio" name="pets" id="pets">
+                    Não
+                    <input type="radio" name="pets" id="pets">
+                    Não
+                  </section>
+                  <section id="filhos_section">
+                    <label for="">Possui filhos? Se sim, quantos?</label>
+                    <input type="text" name="text" id="filhos" required>
+                  </section>
+                  <button type="submit">Enviar</button>                 
+                </fieldset>
+                <h3><a href="../../index.html">VOLTAR</a></h3>
+            </form>
+        </div>        
+    </main>
+    <script src="./form.js"></script>
+</body>
+</html>
