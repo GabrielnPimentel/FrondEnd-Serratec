@@ -14,12 +14,12 @@
     <title>Prepare-se para o Futuro!</title>
   </head>
   <body>
-    <nav class="navbar">
+    <nav id="navbar" class="navbar">
       <div class="navbar_content">
-        <div class="navbar_image">
-          <a href="./index.html"
-            ><img src="./src/assets/vaultBoyIcon.png" alt=""
-          /></a>
+        <div class="switch" onclick="toggleMode()">
+          <button>
+            <img src="./src/assets/redButton2.png" alt="vault boy icone" />
+          </button>
         </div>
         <div class="container_links">
           <ul class="navbar_links">
@@ -30,7 +30,10 @@
         </div>
       </div>
     </nav>
-    <header class="header">
+    <div class="fundo">
+
+    </div>
+    <header id="header" class="header">
       <div class="header_content">
         <h3>
           Bem-vindo à Vault-Tec, pioneira em soluções de abrigo e sobrevivência
@@ -40,26 +43,37 @@
         </h3>
       </div>
     </header>
-    <section id="opcoes" class="max-width">
+    <section id="opcoes" class="opcoes max-width">
       <ul class="opcoes_container">
         <li class="opcoes_item">
-          <div>
-            <img src="./src/assets/vaultBoyOverc.png" alt="" />
-          </div>
+          <a href="https://fallout.fandom.com/wiki/Fallout_4_items">
+            <div>
+              <img
+                src="./src/assets/vaultBoyOverc.png"
+                alt="vaultboy carregando items"
+              />
+            </div>
+          </a>
           <h3>O que posso levar?</h3>
           <p>Confira a lista de items permitidos dentro do abrigo.</p>
         </li>
         <li class="opcoes_item">
-          <div>
-            <img src="./src/assets/VaultBoyEquipped.png" alt="" />
-          </div>
+          <a
+            href="https://www.youtube.com/playlist?list=PLLw6jr9nSJazFPGA39BDrz2ISqFn8bAdW"
+          >
+            <div>
+              <img src="./src/assets/VaultBoyEquipped.png" alt="" />
+            </div>
+          </a>
           <h3>Manual do fim do mundo</h3>
           <p>Dicas de como sobreviver no novo mundo.</p>
         </li>
         <li class="opcoes_item">
-          <div>
-            <img src="./src/assets/VaultBoyParting.png" alt="" />
-          </div>
+          <a href="https://fallout.fandom.com/wiki/Drinks">
+            <div>
+              <img src="./src/assets/VaultBoyParting.png" alt="" />
+            </div>
+          </a>
           <h3>Beba como se fosse o fim do mundo!</h3>
           <p>
             O mundo acabou mas a bebida não! Comemore como se não houvesse
@@ -67,23 +81,29 @@
           </p>
         </li>
         <li class="opcoes_item">
-          <div>
-            <img src="./src/assets/vaultBoyKiller.png" alt="" />
-          </div>
+          <a href="https://fallout.fandom.com/wiki/Fallout_4_items">
+            <div>
+              <img src="./src/assets/vaultBoyKiller.png" alt="" />
+            </div>
+          </a>
           <h3>Recompensas</h3>
           <p>Confira os espólios mais requisitos mundo afora.</p>
         </li>
         <li class="opcoes_item">
-          <div>
-            <img src="./src/assets/vaultBoyWarlord.png" alt="" />
-          </div>
+          <a href="https://fallout.fandom.com/wiki/Fallout_4_creatures">
+            <div>
+              <img src="./src/assets/vaultBoyWarlord.png" alt="" />
+            </div>
+          </a>
           <h3>Ameaças</h3>
           <p>Lista de principais inimigos</p>
         </li>
         <li class="opcoes_item">
-          <div>
-            <img src="./src/assets/vaultBoyArrested.png" alt="" />
-          </div>
+          <a href="https://fallout.fandom.com/wiki/Fallout_4_creatures">
+            <div>
+              <img src="./src/assets/vaultBoyArrested.png" alt="" />
+            </div>
+          </a>
           <h3>Como se comportar</h3>
           <p>Evite problemas e conheça as regras do abrigo.</p>
         </li>
@@ -91,7 +111,7 @@
     </section>
     <section id="about" class="about max-width">
       <div class="about_container">
-        <h2>Sobre o desenvolvimento.</h2>
+        <h2>Sobre a empresa.</h2>
         <div class="about_item">
           <div class="about_left">
             <img
@@ -108,11 +128,11 @@
                 essenciais e instalações de suporte vital. Nossos bunkers são
                 projetados para resistir a uma variedade de ameaças, incluindo
                 guerra nuclear, desastres naturais e pandemias, proporcionando
-                um refúgio seguro e confortável para as gerações futuras. <br><br>Além
-                disso, a Vault-Tec é reconhecida por seus programas de
-                experimentação científica inovadores, conduzidos em colaboração
-                com os melhores mentes do mundo. Nossas pesquisas abrangem uma
-                ampla gama de áreas, desde genética e medicina até
+                um refúgio seguro e confortável para as gerações futuras.
+                <br /><br />Além disso, a Vault-Tec é reconhecida por seus
+                programas de experimentação científica inovadores, conduzidos em
+                colaboração com os melhores mentes do mundo. Nossas pesquisas
+                abrangem uma ampla gama de áreas, desde genética e medicina até
                 sustentabilidade e desenvolvimento de comunidades
                 autossuficientes.
               </p>
@@ -126,5 +146,6 @@
         <h3>Desenvolvido por Vault-Tec</h3>
       </div>
     </footer>
+    <script src="./script.js"></script>
   </body>
 </html>

@@ -7,16 +7,46 @@
     font-weight: 400;
     font-style: normal;
   }
+
+  :root{
+      background-color: #0066b1;
+    --bg-url: url(../assets/vaultTecLogo.png);
+    --switch-bg-url: url(../assets/radioactiveIcon.png);
+    --bg-nav-color: #fff773;
+    --bg-foot-color:#fff773;
+  }
+
+  .light {
+      color: #0c0;
+      background-color: black;
+    --bg-url: url(../assets/nukeExplosion.png);
+    --switch-bg-url: url(../assets/vaultBoyIcon.png);
+    --bg-nav-color: #353634;
+    --bg-foot-color: #353634;
+  }
+
+
   
   body{
-    background-image: url(../assets/vaultTecLogo.png);
+    /* background: var(--bg-url) no-repeat ;
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: fixed;
-    background-color: #0066b1;
+    background-attachment: fixed; */
     font-size: 1.6rem;
-    margin-top: 15rem
+    padding-top: 15rem
   }
+
+.fundo {
+  background: var(--bg-url) no-repeat;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100vw;
+  height: calc(100vh - 85px); /* Subtrai a altura da barra de navegação */
+  position: fixed;
+  top: 85px; /* Altura da barra de navegação */
+  z-index: -1;
+}
 
   html {
     font-size: 100%;
