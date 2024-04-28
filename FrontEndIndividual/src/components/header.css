@@ -8,7 +8,7 @@
 }
 
 .header_content{
-    background-color: aliceblue;
+    background-image: var(--bg-HeAb-image);
     border: 5px solid gray;
     border-radius: 10px;
     width: 50%;

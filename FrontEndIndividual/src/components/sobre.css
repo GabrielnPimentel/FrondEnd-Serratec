@@ -28,7 +28,7 @@
 }
 
 .about_right {
-    background-color: aliceblue;
+    background-image: var(--bg-HeAb-image);
     border: 5px solid gray;
     border-radius: 10px;
     flex: 1;

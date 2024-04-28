@@ -14,6 +14,7 @@
     --switch-bg-url: url(../assets/radioactiveIcon.png);
     --bg-nav-color: #fff773;
     --bg-foot-color:#fff773;
+    --bg-HeAb-image: radial-gradient(circle, #f0f8ff, #faebd7);
   }
 
   .light {
@@ -23,6 +24,7 @@
     --switch-bg-url: url(../assets/vaultBoyIcon.png);
     --bg-nav-color: #353634;
     --bg-foot-color: #353634;
+    --bg-HeAb-image: radial-gradient(#444, #111);
   }
 
 
@@ -72,6 +74,10 @@
     padding: 0 4rem;
     margin: 0 auto;
     margin-bottom: 26rem;
+  }
+
+  .hidden{
+    display: none;
   }
 
   
