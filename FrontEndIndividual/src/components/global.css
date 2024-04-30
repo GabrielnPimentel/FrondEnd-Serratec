@@ -50,6 +50,21 @@
   z-index: -1;
 }
 
+.monitor_container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between
+}
+.monitor{
+  display: flex;
+  justify-content: center;
+  border: 2px silver solid;
+  border-radius: 10px;
+  padding: 8px;
+  background-image:radial-gradient(#444, #111);
+  color: #0c0;
+}
+
   html {
     font-size: 100%;
   }
@@ -78,6 +93,17 @@
 
   .hidden{
     display: none;
+  }
+
+  @media (max-width: 650px) {
+    
+    .cards_container{
+
+    }
+
+    .cards{
+
+    }
   }
 
   

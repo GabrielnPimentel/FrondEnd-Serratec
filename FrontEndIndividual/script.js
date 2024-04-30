@@ -6,7 +6,7 @@ function toggleMode() {
     const header = document.querySelector("#header .header_content h3");
     
     
-    const opcoes = document.querySelector("#opcoes");
+    const cards = document.querySelector("#cards");
     
     const img = document.querySelector("#about .about_left img");
     const about = document.querySelector("#about .about_container h2");
@@ -19,14 +19,14 @@ function toggleMode() {
         header.textContent = "Seja bem vindo! Esse projeto é uma dedicatória a franquia Fallout, não visando fins lucrativos";
         footer.textContent = "Desenvolvido por Gabriel Nogueira Pimentel - Turma 18";
         about.textContent = "Sobre o desenvolvedor";
-        opcoes.classList.add("hidden");
+        cards.classList.add("hidden");
         player.classList.add("hidden");
     } else {
         img.setAttribute('src', './src/assets/vaultBoyIcon.png');
         header.textContent = "Bem-vindo à Vault-Tec, pioneira em soluções de abrigo e sobrevivência pós-apocalíptica desde 2054. Como líder global em tecnologia de bunkers e abrigos subterrâneos, a Vault-Tec tem o compromisso de garantir a segurança e o bem-estar dos habitantes do mundo pós-guerra.";
         footer.textContent = "Desenvolvido por Vault-Tec"
         about.textContent = "Sobre a empresa";
-        opcoes.classList.remove("hidden");
+        cards.classList.remove("hidden");
         player.classList.add("hidden")
 
     }
